@@ -1,0 +1,10 @@
+---
+- name: MariaDB prereqs
+  apt:
+    name:
+      - python-mysqldb
+    state: present
+
+- name: Install MariaDB
+  apt: pkg=mariadb-server state=present
+ 
